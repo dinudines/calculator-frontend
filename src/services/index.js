@@ -1,5 +1,5 @@
 import axios from 'axios';
-const API_URI = "/api/calculations";
+const API_URI = "https://my-own-calculator.herokuapp.com/api/calculations";
 
 export const GET_ALL = () => {
   return axios
