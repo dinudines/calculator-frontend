@@ -1,38 +1,71 @@
 .App {
+  display: block;
+  border: 1px solid gray;
+  border-radius: 5px;
   text-align: center;
+  margin-top: 5%;
+  /* font-family: 'Open Sans', sans-serif'; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.calculator {
+  margin: 1rem;
+  border: 1px solid gray;
+  border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Body {
+  max-width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.custom-btn {
+  width: 33%;
+  height: 5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.row {
+  margin: 0.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-control:disabled, .form-control[readonly] {
+  background-color: white;
+  text-align: right;
+  font-family: 'Open Sans', sans-serif;
+  font-size: x-large;
+  letter-spacing: 5px;
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+  background-color: gray;
+  border-color: gray;
+  cursor:not-allowed;
+}
+
+.Screen {
+  margin-bottom: 2rem;
+}
+
+.custom-input {
+  min-height: 4rem;
+}
+
+.btn-light {
+  border-color: #cfd0d25e;
+}
+
+.btn-dark {
+  color: black;
+  background-color: #cfd0d25e;
+  border-color: #cfd0d25e;
+}
+
+.btn-dark:hover {
+  color: black;
+  background-color: #cfd0d2c7;
+  border-color: #cfd0d2c7;
+}
+
+.btn-function {
+  color: black;
+  background-color: #E7D2CC;
+  border-color: #E7D2CC;
 }
