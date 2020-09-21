@@ -138,9 +138,6 @@ const App = () => {
         <Screen input={input} output={output}/>
         <Body handleClick={handleClick} disabled={!input.length} />
       </div>
-      {calculations.map((cal) => (
-        <li key={cal.id}>{cal.input} {cal.output} </li>
-      ))}
     </div>
   );
 }
